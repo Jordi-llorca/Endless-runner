@@ -27,5 +27,17 @@ public class PlayerMovement : MonoBehaviour
             position--;
         }
     }
-    
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "objetoMadera")
+        {
+            Morir();
+        }
+    }
+    void Morir()
+    {
+        Destroy(this.gameObject);
+    }
+
 }
