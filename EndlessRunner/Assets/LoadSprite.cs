@@ -5,6 +5,7 @@ using UnityEngine;
 public class LoadSprite : MonoBehaviour
 {
     SpriteRenderer sprite;
+    public string spriteName = "";
     Sprite[] sprites;
     void Start()
     {
