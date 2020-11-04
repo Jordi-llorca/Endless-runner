@@ -8,9 +8,13 @@ public class PlayerMovement : MonoBehaviour
     public float distancia = 3f;
     public float velocidad = 2f;
 
+    public GameObject[] hearts;
+    public int life;
+    bool dead = false;
     void Update()
     {
         movimientoVertical();
+        if (dead) Morir();
     }
 
     void movimientoVertical()
@@ -32,12 +36,30 @@ public class PlayerMovement : MonoBehaviour
     {
         if (collision.gameObject.tag == "objetoMadera")
         {
-            Morir();
+            TakeDamage(1);
+        }
+        else if(collision.gameObject.tag == "objetoHierro")
+        {
+            TakeDamage(2);
         }
     }
     void Morir()
     {
         Destroy(this.gameObject);
+    }
+    public void TakeDamage(int d)
+    {
+        if(d > 1)
+        {
+            for (int a = 0; a < d; a++) TakeDamage(1);
+        }
+        if(life > 0)
+        {
+            life -= d;
+            Destroy(hearts[life].gameObject);
+            if (life < 1) dead = true;
+        }
+        
     }
 
 }
