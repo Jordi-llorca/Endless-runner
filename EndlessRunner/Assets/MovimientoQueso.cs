@@ -7,6 +7,7 @@ public class MovimientoQueso : MonoBehaviour
     float velocidad;
     float timer;
     public float movVert = 2f;
+    
 
     private void Start()
     {
@@ -20,12 +21,20 @@ public class MovimientoQueso : MonoBehaviour
         if (transform.position.x <= -12)
         {
             Destroy(this.gameObject);
+            Spawner.spawnear = true;
+            Spawner.objetosEnPantalla--;
         }
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Score.scoreValue++;
+        PlayerMovement.lscore++;
         Destroy(this.gameObject);
-        
+        Spawner.spawnear = true;
+        Spawner.objetosEnPantalla--;
+        if(PlayerMovement.lscore >= 2)
+        {
+            if(PlayerMovement.vHearts < 2) PlayerMovement.vHearts++;
+            PlayerMovement.lscore = 0;
+        }
     }
 }

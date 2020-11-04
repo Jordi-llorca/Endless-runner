@@ -15,11 +15,15 @@ public class MovimientoObstaculo : MonoBehaviour
         if(transform.position.x <= -12)
         {
             Destroy(this.gameObject);
+            Spawner.spawnear = true;
+            Spawner.objetosEnPantalla--;
         }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         Destroy(this.gameObject);
+        Spawner.spawnear = true;
+        Spawner.objetosEnPantalla--;
     }
 }

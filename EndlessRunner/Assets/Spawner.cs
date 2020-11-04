@@ -4,29 +4,35 @@ using UnityEngine;
 
 public class Spawner : MonoBehaviour
 {
-    public float cuantoTiempo = 5f;
+
     public GameObject obstacleMadera;
     public GameObject obstacleHierro;
     public GameObject quesoCompleto;
-    
+    public float velocidadInicial = 2f;
+    public float timerPrimerSpawnHierro = 30f;
 
     float timerSpawn;
-    public float timerPrimerSpawnHierro = 30f;
     int counter = 5;
+    int posPrev;
 
-    static public float velocidadObjetos = 2f;
-
+    static public float velocidadObjetos;
+    static public int objetosEnPantalla = 0;
+    static public bool spawnear = false;
+    void Start()
+    {
+        velocidadObjetos = velocidadInicial;
+    }
     void Update()
     {
         velocidadObjetos += Time.deltaTime * 0.05f;
         timerSpawn -= Time.deltaTime;
         timerPrimerSpawnHierro -= Time.deltaTime;
 
-        if (timerSpawn <= 0)
+        if ((timerSpawn <= 0 || (spawnear && velocidadObjetos > 3)) && objetosEnPantalla < 6)
         {   
             if (timerPrimerSpawnHierro > 0)
             {
-                GenerarObstaculo(obstacleMadera);
+                   GenerarObstaculo(obstacleMadera);               
             }   
             else
             {
@@ -49,11 +55,13 @@ public class Spawner : MonoBehaviour
     void GenerarObstaculo(GameObject obstacle)
     {
         int posicion = Random.Range(-1, 2);
-
+        while (posicion == posPrev) posicion = Random.Range(-1, 2);
         Vector3 nuevaPosicion = new Vector3(transform.position.x, (posicion * 3.5f) + 0.5f, transform.position.z);
 
+        posPrev = posicion;
         Instantiate(obstacle, nuevaPosicion, transform.rotation);
-        timerSpawn = cuantoTiempo;
-        cuantoTiempo = cuantoTiempo < 0.5f ? cuantoTiempo : cuantoTiempo - 0.005f;
+        spawnear = false;
+        objetosEnPantalla++;
+        timerSpawn = 1.5f;
     }
 }

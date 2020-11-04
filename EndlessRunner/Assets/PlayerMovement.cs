@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -8,13 +9,25 @@ public class PlayerMovement : MonoBehaviour
     public float distancia = 3f;
     public float velocidad = 2f;
 
+    public static int vHearts = 0;
+    public static int lscore = 0;
+
     public GameObject[] hearts;
+    public GameObject[] vhearts;
     public int life;
     bool dead = false;
+
+    private void Start()
+    {
+        vhearts[0].SetActive(false);
+        vhearts[1].SetActive(false);
+    }
     void Update()
     {
         movimientoVertical();
         if (dead) Morir();
+
+        if(vHearts > 0) vhearts[vHearts - 1].SetActive(true);
     }
 
     void movimientoVertical()
@@ -53,7 +66,12 @@ public class PlayerMovement : MonoBehaviour
         {
             for (int a = 0; a < d; a++) TakeDamage(1);
         }
-        if(life > 0)
+        if(vHearts > 0)
+        {
+            vhearts[vHearts - 1].SetActive(false);
+            vHearts--;
+        }
+        else if(life > 0)
         {
             life -= d;
             Destroy(hearts[life].gameObject);
