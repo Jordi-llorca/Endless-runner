@@ -1,0 +1,821 @@
+fileFormatVersion: 2
+guid: e22c7ab966e36014585e379ff3ec31aa
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7656477722738549042
+    second: Harina final_0
+  - first:
+      213: -1434992481786058921
+    second: Harina final_1
+  - first:
+      213: 7590465707805249963
+    second: Harina final_2
+  - first:
+      213: -6545257487441984371
+    second: Harina final_3
+  - first:
+      213: 5036104989295617617
+    second: Harina final_4
+  - first:
+      213: -9069018632774829780
+    second: Harina final_5
+  - first:
+      213: 5406879886331842140
+    second: Harina final_6
+  - first:
+      213: -4162473918745152420
+    second: Harina final_7
+  - first:
+      213: 8118900606376110848
+    second: Harina final_8
+  - first:
+      213: -4935620349801013919
+    second: Harina final_9
+  - first:
+      213: -6167888539718840346
+    second: Harina final_10
+  - first:
+      213: -2537892571516557867
+    second: Harina final_11
+  - first:
+      213: -7046845954300873757
+    second: Harina final_12
+  - first:
+      213: -861306665637800708
+    second: Harina final_13
+  - first:
+      213: -6625957166292523255
+    second: Harina final_14
+  - first:
+      213: 3278194167302558847
+    second: Harina final_15
+  - first:
+      213: -7186226719084199804
+    second: Harina final_16
+  - first:
+      213: 7394453485156106104
+    second: Harina final_17
+  - first:
+      213: 6291107442339679622
+    second: Harina final_18
+  - first:
+      213: 8003535036109493980
+    second: Harina final_19
+  - first:
+      213: -5959968916305322984
+    second: Harina final_20
+  - first:
+      213: -3517169625778766024
+    second: Harina final_21
+  - first:
+      213: 7945313557388262215
+    second: Harina final_22
+  - first:
+      213: 3156569983447505546
+    second: Harina final_23
+  - first:
+      213: -2250750277446411192
+    second: Harina final_24
+  - first:
+      213: -7627371618612193405
+    second: Harina final_25
+  - first:
+      213: 8916390764432154349
+    second: Harina final_26
+  - first:
+      213: -1956524205200805974
+    second: Harina final_27
+  - first:
+      213: -279908311412897899
+    second: Harina final_28
+  - first:
+      213: -6619955406828325001
+    second: Harina final_29
+  - first:
+      213: -6215849040489219704
+    second: Harina final_30
+  - first:
+      213: 8949413210543258460
+    second: Harina final_31
+  - first:
+      213: -6793866459497949405
+    second: Harina final_32
+  - first:
+      213: 780050385798611900
+    second: Harina final_33
+  - first:
+      213: 4062257659545019373
+    second: Harina final_34
+  - first:
+      213: 2879238641776009083
+    second: Harina final_35
+  - first:
+      213: 2405850826828796527
+    second: Harina final_36
+  - first:
+      213: -8513610818483689798
+    second: Harina final_37
+  - first:
+      213: -6116225686792946728
+    second: Harina final_38
+  - first:
+      213: 5574206119855705542
+    second: Harina final_39
+  - first:
+      213: 827980814819557822
+    second: Harina final_40
+  - first:
+      213: 4896810952474158166
+    second: Harina final_41
+  - first:
+      213: 3416141897174205315
+    second: Harina final_42
+  - first:
+      213: -2590725958781790397
+    second: Harina final_43
+  - first:
+      213: 4235461217433703493
+    second: Harina final_44
+  - first:
+      213: -45599769653807279
+    second: Harina final_45
+  - first:
+      213: -1187358814308833759
+    second: Harina final_46
+  - first:
+      213: -5749224310364260609
+    second: Harina final_47
+  - first:
+      213: -3068706621637013079
+    second: Harina final_48
+  - first:
+      213: -1185229704866033575
+    second: Harina final_49
+  - first:
+      213: 6881017945232502165
+    second: Harina final_50
+  - first:
+      213: 1085110648443099320
+    second: Harina final_51
+  - first:
+      213: -1702666122819823482
+    second: Harina final_52
+  - first:
+      213: -681560494220895390
+    second: Harina final_53
+  - first:
+      213: 8444784118535399938
+    second: Harina final_54
+  - first:
+      213: -3968117535476759931
+    second: Harina final_55
+  - first:
+      213: -6956523769574915370
+    second: Harina final_56
+  - first:
+      213: 4889111716842530012
+    second: Harina final_57
+  - first:
+      213: -3741262433785797371
+    second: Harina final_58
+  - first:
+      213: 2920682900455107399
+    second: Harina final_59
+  - first:
+      213: 2569993874672248850
+    second: Harina final_60
+  - first:
+      213: 2113628482398516781
+    second: Harina final_61
+  - first:
+      213: 4110290584847782043
+    second: Harina final_62
+  - first:
+      213: 6678841959654332824
+    second: Harina final_63
+  - first:
+      213: -8583012766231644599
+    second: Harina final_64
+  - first:
+      213: 299232310326638549
+    second: Harina final_65
+  - first:
+      213: -4367003530628899811
+    second: Harina final_66
+  - first:
+      213: -6312693666004078547
+    second: Harina final_67
+  - first:
+      213: 4188456746922478679
+    second: Harina final_68
+  - first:
+      213: -4492715300483851469
+    second: Harina final_69
+  - first:
+      213: 1968926274832342940
+    second: Harina final_70
+  - first:
+      213: -2988384106125159188
+    second: Harina final_71
+  - first:
+      213: -8816761062590050829
+    second: Harina final_72
+  - first:
+      213: 8466197821059734608
+    second: Harina final_73
+  - first:
+      213: 5768381771527913323
+    second: Harina final_74
+  - first:
+      213: -1673104544279250098
+    second: Harina final_75
+  - first:
+      213: -1492962508078470152
+    second: Harina final_76
+  - first:
+      213: 1082597659991023768
+    second: Harina final_77
+  - first:
+      213: -7004324884092583584
+    second: Harina final_78
+  - first:
+      213: -1989304964140657875
+    second: Harina final_79
+  - first:
+      213: -8377010591393190056
+    second: Harina final_80
+  - first:
+      213: -9099004745208500543
+    second: Harina final_81
+  - first:
+      213: 9044932019879261545
+    second: Harina final_82
+  - first:
+      213: -292862264741001790
+    second: Harina final_83
+  - first:
+      213: -2846312028939118096
+    second: Harina final_84
+  - first:
+      213: 2018787032353061380
+    second: Harina final_85
+  - first:
+      213: -9085769485023031939
+    second: Harina final_86
+  - first:
+      213: 2116827778769899540
+    second: Harina final_87
+  - first:
+      213: 8542781971518212320
+    second: Harina final_88
+  - first:
+      213: 6898093632841798889
+    second: Harina final_89
+  - first:
+      213: 577822825433925228
+    second: Harina final_90
+  - first:
+      213: -8670773333959420042
+    second: Harina final_91
+  - first:
+      213: 6553834838485122076
+    second: Harina final_92
+  - first:
+      213: -6715155403050656477
+    second: Harina final_0
+  - first:
+      213: -1117518904771479939
+    second: Harina final_1
+  - first:
+      213: -5672153510948373034
+    second: Harina final_2
+  - first:
+      213: 3618835658182998030
+    second: Harina final_3
+  - first:
+      213: 9066789447586512356
+    second: Harina final_4
+  - first:
+      213: 1834838478233693181
+    second: Harina final_5
+  - first:
+      213: -1473869464862901837
+    second: Harina final_6
+  - first:
+      213: -1450204095142258695
+    second: Harina final_7
+  - first:
+      213: 1329827795879888197
+    second: Harina final_8
+  - first:
+      213: 2518137108560914967
+    second: Harina final_9
+  - first:
+      213: 6825434100727358325
+    second: Harina final_10
+  - first:
+      213: 8899470646924642100
+    second: Harina final_11
+  - first:
+      213: -4582175223255898083
+    second: Harina final_12
+  - first:
+      213: 5225858738554630177
+    second: Harina final_13
+  - first:
+      213: -3550146894266516427
+    second: Harina final_14
+  - first:
+      213: -1715357463132519296
+    second: Harina final_15
+  - first:
+      213: 2707917454564477603
+    second: Harina final_16
+  - first:
+      213: -4649901059619962807
+    second: Harina final_17
+  - first:
+      213: -9120163061180041992
+    second: Harina final_18
+  - first:
+      213: 6455738867174571618
+    second: Harina final_19
+  - first:
+      213: -7995150816723069965
+    second: Harina final_20
+  - first:
+      213: -1307819319812669659
+    second: Harina final_21
+  - first:
+      213: 3290476246888528018
+    second: Harina final_22
+  - first:
+      213: 5617394246456575060
+    second: Harina final_23
+  - first:
+      213: 7286652541225910928
+    second: Harina final_24
+  - first:
+      213: -4864173648934960416
+    second: Harina final_25
+  - first:
+      213: -472575946126296773
+    second: Harina final_26
+  - first:
+      213: 891772860431946346
+    second: Harina final_27
+  - first:
+      213: 3799315733104903854
+    second: Harina final_28
+  - first:
+      213: 8352617236461962120
+    second: Harina final_29
+  - first:
+      213: -2907197461704710838
+    second: Harina final_30
+  - first:
+      213: -1952709512181401164
+    second: Harina final_31
+  - first:
+      213: 820365663004122079
+    second: Harina final_32
+  - first:
+      213: -5760301654224790468
+    second: Harina final_33
+  - first:
+      213: -1918940442019042096
+    second: Harina final_34
+  - first:
+      213: 7686987852298079357
+    second: Harina final_35
+  - first:
+      213: -3611126061777763838
+    second: Harina final_36
+  - first:
+      213: -4173641015934425652
+    second: Harina final_37
+  - first:
+      213: 6981969387497215830
+    second: Harina final_38
+  - first:
+      213: 7899672343551698052
+    second: Harina final_39
+  - first:
+      213: -7881731577163107678
+    second: Harina final_40
+  - first:
+      213: -8288620221324951643
+    second: Harina final_41
+  - first:
+      213: 6978150541017914747
+    second: Harina final_42
+  - first:
+      213: 7704426855553327066
+    second: Harina final_43
+  - first:
+      213: -7812147626995581737
+    second: Harina final_44
+  - first:
+      213: -3421817171179856981
+    second: Harina final_45
+  - first:
+      213: -5984785857020633493
+    second: Harina final_46
+  - first:
+      213: 489307823238496994
+    second: Harina final_47
+  - first:
+      213: -7472427703039038311
+    second: Harina final_48
+  - first:
+      213: 1922034105562541445
+    second: Harina final_49
+  - first:
+      213: 1487649960359107614
+    second: Harina final_50
+  - first:
+      213: -4180688884365499214
+    second: Harina final_51
+  - first:
+      213: 3391429440996745421
+    second: Harina final_52
+  - first:
+      213: -9072625511026586289
+    second: Harina final_53
+  - first:
+      213: 8177264057802451458
+    second: Harina final_54
+  - first:
+      213: 9117390210868237778
+    second: Harina final_55
+  - first:
+      213: 3700738465675073069
+    second: Harina final_56
+  - first:
+      213: -2842000757285673061
+    second: Harina final_57
+  - first:
+      213: -3238519104480501483
+    second: Harina final_58
+  - first:
+      213: 7133880398892151731
+    second: Harina final_59
+  - first:
+      213: 3657927214275678245
+    second: Harina final_60
+  - first:
+      213: -207339961421987913
+    second: Harina final_61
+  - first:
+      213: -2026959098080970924
+    second: Harina final_62
+  - first:
+      213: -8372677251560545838
+    second: Harina final_63
+  - first:
+      213: 6253514112724165685
+    second: Harina final_64
+  - first:
+      213: -499176123641496954
+    second: Harina final_65
+  - first:
+      213: -1359954845841410102
+    second: Harina final_66
+  - first:
+      213: -886849431285434544
+    second: Harina final_67
+  - first:
+      213: -5449405718265347127
+    second: Harina final_68
+  - first:
+      213: -2243748296347903328
+    second: Harina final_69
+  - first:
+      213: 8775667945388819992
+    second: Harina final_70
+  - first:
+      213: 3535514324917298377
+    second: Harina final_71
+  - first:
+      213: 1281093802796608485
+    second: Harina final_72
+  - first:
+      213: -5250834993881809232
+    second: Harina final_73
+  - first:
+      213: 2553328729727615421
+    second: Harina final_74
+  - first:
+      213: 60012461775270885
+    second: Harina final_75
+  - first:
+      213: 5644401763547601979
+    second: Harina final_76
+  - first:
+      213: 9052057071363486994
+    second: Harina final_77
+  - first:
+      213: 5337000360151892114
+    second: Harina final_78
+  - first:
+      213: 78122894439826291
+    second: Harina final_79
+  - first:
+      213: 1496445291205203876
+    second: Harina final_80
+  - first:
+      213: 9122504066604465613
+    second: Harina final_81
+  - first:
+      213: -7203544990159924381
+    second: Harina final_82
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Harina final_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 56
+        width: 97
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 74, w: 109}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32dde954db9fec2a0800000000000000
+      internalID: -6715155403050656477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harina final_1
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 51
+        width: 98
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d76ff4b1a76cd70f0800000000000000
+      internalID: -1117518904771479939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harina final_2
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 45
+        width: 123
+        height: 147
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ddff642f667841b0800000000000000
+      internalID: -5672153510948373034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harina final_3
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 27
+        width: 143
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e08b3829bdfa83230800000000000000
+      internalID: 3618835658182998030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harina final_4
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 13
+        width: 145
+        height: 214
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ed77a4f6f4b3dd70800000000000000
+      internalID: 9066789447586512356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harina final_5
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 22
+        width: 134
+        height: 207
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfb6653efd7a67910800000000000000
+      internalID: 1834838478233693181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harina final_6
+      rect:
+        serializedVersion: 2
+        x: 676
+        y: 9
+        width: 207
+        height: 245
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b93d85d783cb8be0800000000000000
+      internalID: -1473869464862901837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harina final_7
+      rect:
+        serializedVersion: 2
+        x: 872
+        y: 0
+        width: 192
+        height: 284
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f79a391f07dfdbe0800000000000000
+      internalID: -1450204095142258695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harina final_8
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 0
+        width: 276
+        height: 284
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5458cd9a55f747210800000000000000
+      internalID: 1329827795879888197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

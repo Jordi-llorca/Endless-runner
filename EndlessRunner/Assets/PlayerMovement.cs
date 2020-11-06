@@ -14,6 +14,7 @@ public class PlayerMovement : MonoBehaviour
 
     public GameObject[] hearts;
     public GameObject[] vhearts;
+    public GameObject[] halfHearts;
     public int life;
     bool dead = false;
 
@@ -24,60 +25,95 @@ public class PlayerMovement : MonoBehaviour
     public LayerMask groundLayer;
     public Transform groundCheck;
 
-    SpriteRenderer sprite;
+
+    public GameObject bajar;
+    public GameObject saltar;
+    public GameObject golpeCuchillo;
+    public GameObject golpeDebil;
+    public GameObject OuchRojo;
+    public GameObject Ouch;
+    public GameObject GolpeTomate;
+    public GameObject GolpeHarina;
+
+    public GameObject momentoDolor;
+
+    public float contador = 0;
+    public float contadorVHearts = 0;
+
+
 
     private void Start()
     {
         vhearts[0].SetActive(false);
         vhearts[1].SetActive(false);
-
+        halfHearts[0].SetActive(false);
+        halfHearts[1].SetActive(false);
+        momentoDolor.SetActive(false);
     }
     void Update()
     {
-        movimientoVertical();
         if (dead) Morir();
-
+        movimientoVertical();
         vanishingLives();
+        if (contador > 0)
+        {
+            momentoDolor.SetActive(true);
+            contador -= Time.deltaTime;
+        }
+        else momentoDolor.SetActive(false);
 
-    }
-    void loadSpriteVHeats(int vHeart, bool isComplete)
-    {
-        sprite = vhearts[vHeart].GetComponent<SpriteRenderer>();
-        if(isComplete)
-            sprite = Resources.Load<SpriteRenderer>("corazon_queso");
-        else
-            sprite = Resources.Load<SpriteRenderer>("medio_corazon");
+        if (vHearts > 0 && contadorVHearts <= 0) contadorVHearts = 10;
+        if (contadorVHearts <= 1 && vHearts > 0)
+        {
+            TakeDamage(1);
+            Score.scoreValue += (int)(Score.scoreValue * 0.10f);
+            
+        }
+        if (contadorVHearts > 0) contadorVHearts -= Time.deltaTime;
 
-        
     }
     void vanishingLives()
     {
-        switch (lscore)
+        if(lscore == 1)
         {
-            case 1:
-                vhearts[0].SetActive(true);
-                vhearts[1].SetActive(false);
-                loadSpriteVHeats(0, false);
-                break;
-            case 2:
-                vhearts[0].SetActive(true);
-                vhearts[1].SetActive(false);
-                loadSpriteVHeats(0, true);
-                break;
-            case 3:
-                vhearts[0].SetActive(true);
-                vhearts[1].SetActive(true);
-                loadSpriteVHeats(1, false);
-                break;
-            case 4:
-                vhearts[0].SetActive(true);
-                vhearts[1].SetActive(true);
-                loadSpriteVHeats(1, true);
-                break;
-            default:
+            if(vHearts == 0)
+            {
                 vhearts[0].SetActive(false);
                 vhearts[1].SetActive(false);
-                break;
+                halfHearts[0].SetActive(true);
+                halfHearts[1].SetActive(false);
+            }
+            else
+            {
+                vhearts[0].SetActive(true);
+                vhearts[1].SetActive(false);
+                halfHearts[0].SetActive(false);
+                halfHearts[1].SetActive(true);
+            }
+        }
+        else
+        {
+            if (vHearts == 1)
+            {
+                vhearts[0].SetActive(true);
+                vhearts[1].SetActive(false);
+                halfHearts[0].SetActive(false);
+                halfHearts[1].SetActive(false);
+            }
+            else if(vHearts == 2)
+            {
+                vhearts[0].SetActive(true);
+                vhearts[1].SetActive(true);
+                halfHearts[0].SetActive(false);
+                halfHearts[1].SetActive(false);
+            }
+            else
+            {
+                vhearts[0].SetActive(false);
+                vhearts[1].SetActive(false);
+                halfHearts[0].SetActive(false);
+                halfHearts[1].SetActive(false);
+            }
         }
     }
     void movimientoVertical()
@@ -89,7 +125,7 @@ public class PlayerMovement : MonoBehaviour
             GetComponent<Rigidbody2D>().AddForce(new Vector2(0, velocidad), ForceMode2D.Impulse);
             position++;
             grounded = false;
-            
+            Instantiate(saltar);
 
         }
         if (Input.GetKeyDown(KeyCode.DownArrow) && position != -1 && grounded)
@@ -99,7 +135,7 @@ public class PlayerMovement : MonoBehaviour
             transform.Translate(Vector3.down * distancia);
             position--;
             grounded = false;
-            
+            Instantiate(bajar);
         }
         if (grounded)
         {
@@ -113,13 +149,21 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        Transform pos = this.GetComponent<Transform>();
+        Vector3 res = new Vector3(pos.position.x, pos.position.y);
         if (collision.gameObject.tag == "objetoMadera")
         {
             TakeDamage(1);
+            Instantiate(golpeDebil);
+            Instantiate(GolpeHarina, res, pos.rotation);
+            Instantiate(Ouch, res, pos.rotation);
         }
         else if(collision.gameObject.tag == "objetoHierro")
         {
             TakeDamage(2);
+            Instantiate(golpeCuchillo);
+            Instantiate(GolpeTomate, res, pos.rotation);
+            Instantiate(OuchRojo, res, pos.rotation);
         }
     }
     void Morir()
@@ -128,22 +172,34 @@ public class PlayerMovement : MonoBehaviour
     }
     public void TakeDamage(int d)
     {
-        if(d > 1)
+        if (contador <= 0)
         {
-            for (int a = 0; a < d; a++) TakeDamage(1);
+            contador = 2;
+            if (vHearts > 0)
+            {
+                vHearts--;
+                contador = 0;
+                contadorVHearts = 0;
+                for (int a = 0; a < d-1; a++) TakeDamage(1);
+            }
+            else if (life > 0)
+            {
+                life -= d;
+                if (life < 3)
+                {
+                    hearts[2].SetActive(false);
+                    if(life < 2)
+                    {
+                        hearts[1].SetActive(false);
+                        if (life < 1)
+                        {
+                            hearts[0].SetActive(false);
+                            dead = true;
+                        }
+                    }
+                }
+            }
         }
-        if(vHearts > 0)
-        {
-            vhearts[vHearts - 1].SetActive(false);
-            vHearts--;
-        }
-        else if(life > 0)
-        {
-            life -= d;
-            Destroy(hearts[life].gameObject);
-            if (life < 1) dead = true;
-        }
-        
     }
 
 }
