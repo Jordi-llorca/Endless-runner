@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+using UnityEngine.SceneManagement;
+
 public class PlayerMovement : MonoBehaviour
 {
     int position = 0;
@@ -169,6 +171,7 @@ public class PlayerMovement : MonoBehaviour
     void Morir()
     {
         Destroy(this.gameObject);
+        SceneManager.LoadScene("MenuMuerte");
     }
     public void TakeDamage(int d)
     {
