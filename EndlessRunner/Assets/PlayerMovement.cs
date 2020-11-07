@@ -42,7 +42,7 @@ public class PlayerMovement : MonoBehaviour
     public float contador = 0;
     public float contadorVHearts = 0;
 
-
+    public int move = 0;
 
     private void Start()
     {
@@ -55,11 +55,13 @@ public class PlayerMovement : MonoBehaviour
         contadorVHearts = 0;
         contador = 0;
         lscore = 0;
+        position = 0;
     }
     void Update()
     {
         if (dead) Morir();
         movimientoVertical();
+        move = 0;
         vanishingLives();
         if (contador > 0)
         {
@@ -78,6 +80,8 @@ public class PlayerMovement : MonoBehaviour
         if (contadorVHearts > 0) contadorVHearts -= Time.deltaTime;
 
     }
+    public void jump() { move = 1; }
+    public void fall() { move = -1; }
     void vanishingLives()
     {
         if(lscore == 1)
@@ -124,7 +128,8 @@ public class PlayerMovement : MonoBehaviour
     }
     void movimientoVertical()
     {
-        if (Input.GetKeyDown(KeyCode.UpArrow) && position != 1 && grounded)
+
+        if ((Input.GetKeyDown(KeyCode.UpArrow) || move == 1)&& position != 1 && grounded)
         {
             myAnim.SetBool("isGrounded", false);
             myAnim.SetBool("Jump", true);
@@ -134,7 +139,7 @@ public class PlayerMovement : MonoBehaviour
             Instantiate(saltar);
 
         }
-        if (Input.GetKeyDown(KeyCode.DownArrow) && position != -1 && grounded)
+        if ((Input.GetKeyDown(KeyCode.DownArrow) || move == -1) && position != -1 && grounded)
         {
             myAnim.SetBool("isGrounded", false);
             myAnim.SetBool("Fall", true);
