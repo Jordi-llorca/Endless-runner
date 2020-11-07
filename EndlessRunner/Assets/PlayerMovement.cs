@@ -23,7 +23,7 @@ public class PlayerMovement : MonoBehaviour
     public Animator myAnim;
     
     bool grounded = false;
-    float groundCheckRadius = 0.2f;
+    float groundCheckRadius = 0.1f;
     public LayerMask groundLayer;
     public Transform groundCheck;
 
@@ -51,6 +51,10 @@ public class PlayerMovement : MonoBehaviour
         halfHearts[0].SetActive(false);
         halfHearts[1].SetActive(false);
         momentoDolor.SetActive(false);
+        vHearts = 0;
+        contadorVHearts = 0;
+        contador = 0;
+        lscore = 0;
     }
     void Update()
     {
@@ -177,7 +181,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if (contador <= 0)
         {
-            contador = 2;
+            contador = 1;
             if (vHearts > 0)
             {
                 vHearts--;

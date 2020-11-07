@@ -21,7 +21,10 @@ public class Spawner : MonoBehaviour
     static public bool spawnear = false;
     void Start()
     {
+        timerPrimerSpawnHierro = 30f;
         velocidadObjetos = velocidadInicial;
+        counter = 5;
+        objetosEnPantalla = 0;
     }
     void Update()
     {

@@ -19,5 +19,6 @@ public class botones2 : MonoBehaviour
     public void irAMenuPrincipal()
     {
         SceneManager.LoadScene("MenuPrincipal");
+        
     }
 }
